@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>.:.Hotel Dionys.:.</title>
+	<meta charset="utf-8">
+
+	<!--creacion del menu de las empresas-->
+	<link rel="stylesheet" type="text/css" href="EstilosMenu.css">
+	<link rel="stylesheet" type="text/css" href="ResponsiveMenu.css">
+	<link rel="stylesheet" type="text/css" href="icommon.css">
+	<!--<script type="application/x-javascript">
+		addEventListener("load", function() {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="ScriptMenu.js"></script>
+		<!--fin de la creacion de las empresas-->
+
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+	<div class="social">
+		<ul>
+			<li><a href="http://www.facebook.com/falconmasters" target="_blank" class="icon-facebook3"></a></li>
+			<li><a href="mailto:intercompany@grupodionys.com.pe" class="icon-mail"></a></li>
+		</ul>
+	</div>
+
+	<!--creacion del menu de las empresas-->
+	<div>
+		<header id="vector">
+			<section id="logo9">
+				<h1><a href="http://www.grupodionys.com.pe/"><img src="images/grupo.png" ></a></h1>
+				<span id="abrir_menu" class="icon-menu"></span>
+			</section>
+			<section id="menu">
+				<div><span id="cerrar_menu" class="icon-shrink2"></span> </div>
+				<ul>
+					<a href="http://complejo.grupodionys.com.pe/"><img src="images/complejo.png"></a>
+					<a href="http://intercompany.grupodionys.com.pe/" class="toboganes"><img src="images/intercompany.png"></a>
+					<a href="http://toboganes.grupodionys.com.pe/"><img src="images/toboganes.png"></a>
+					<a href="http://lenas.grupodionys.com.pe/"><img src="images/lenas.png"></a>
+				</ul>
+			</section>
+		</header>
+	</div>
+	<!--fin de la creacion de las empresas-->
+
+
+	<!--header starts-->
+	<div class="header">
+		<div class="top-header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" /></a>
+				</div>
+				<span class="menu"> </span>
+				<div class="m-clear"></div>
+				<div class="top-menu">
+					<ul>
+						<li class="active"><a href="index.html">INICIO</a></li>
+						<li><a class="scroll" href="conference.html">GALERIA</a></li>
+						<!--<li><a class="scroll" href="booking.html">RESERVAS</a></li>-->
+						<li><a class="scroll" href="contact.html">CONTÁCTENOS</a></li>
+					</ul>
+					<script>
+						$("span.menu").click(function() {
+							$(".top-menu ul").slideToggle(200);
+						});
+					</script>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="banner-info text-center">
+				<div class="reserva2"> Muy pronto se <br>habilitaran las reservas</div>
+				<h3><label>BIENVENIDOS</label></h3>
+				<h1>HOTEL DIONYS </h1>
+				<span></span>
+				<ul>
+					<li><a class="scroll" href="#">HOTEL</a><i class="line"></i></li>
+					<li><a class="scroll" href="#">WIFI</a></li>
+					<div class="clearfix"></div>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!---strat-date-piker---->
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$("#datepicker,#datepicker1").datepicker();
+		});
+	</script>
+	<!---/End-date-piker---->
+
+	<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+	<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+	<script type="text/javascript" src="js/JFCore.js"></script>
+	<script type="text/javascript" src="js/JFForms.js"></script>
+	<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+	<script type="text/javascript">
+		(function() {
+			JC.init({
+				domainKey: ''
+			});
+		})();
+	</script>
+	<div class="online_reservation">
+		<div class="b_room">
+			<div class="booking_room">
+				<div class="reservation">
+
+					<form action="precios/contactenos.php" method="post">
+						<ul>
+							<li class="span1_of_1 left">
+								<h5>Fecha de Entrada</h5>
+								<div class="book_date">
+									<input name="fechaentrada" class="date" id="datepicker" type="text" placeholder="DD/MM/AA" required="">
+								</div>
+							</li>
+							<li class="span1_of_1 left">
+								<h5>Fecha de Salida</h5>
+								<div class="book_date">
+									<input name="fechasalida" class="date" id="datepicker1" type="text" placeholder="DD/MM/AA" required="">
+								</div>
+							</li>
+
+							<li class="span1_of_1 left">
+								<h5>Email</h5>
+								<div class="book_date">
+									<input name="gmailprecio" type="email" placeholder="correo@hotmail.com" required="">
+								</div>
+							</li>
+
+
+							<li class="span1_of_1">
+								<h5>Tipo De Habitación</h5>
+
+								<div class="section_room">
+									<select name="habitaciones" id="country" onchange="change_country(this.value)" class="frm-field required" required="">
+										<option value="Habitaciones Simples">Habitaciones Simples</option>
+										<option value="Habitaciones Simples">Habitación Ejecutiva</option>
+										<option value="Habitaciones Matrimoniales">Habitaciones Matrimoniales</option>
+										<option value="Habitaciones Dobles">Habitaciones Dobles</option>
+										<option value="Habitaciones Triples">Habitaciones Triples</option>
+
+							      </select>
+								</div>
+							</li>
+
+							<li class="span1_of_3">
+								<div class="date_btn">
+									<input type="submit" value="Cons. Precio" />
+								</div>
+							</li>
+							<div class="clearfix"></div>
+						</ul>
+					</form>
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	</div>
+	<!---->
+	<div class="package text-center">
+		<div class="container">
+			<h3 class="nosotrosh3">Nosotros</h3>
+			<p>Somos una empresa dedicada al bienestar y comodidad de las personas que eligen al hotel dionys como su mejor alternativa para disfrutar de sus instalaciones y atención personalizada</p>
+			<!-- requried-jsfiles-for owl -->
+			<link href="css/owl.carousel.css" rel="stylesheet">
+			<script src="js/owl.carousel.js"></script>
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo").owlCarousel({
+						items: 1,
+						lazyLoad: true,
+						autoPlay: true,
+						navigation: true,
+						navigationText: false,
+						pagination: false,
+					});
+				});
+			</script>
+			<!-- //requried-jsfiles-for owl -->
+			<div id="owl-demo" class="owl-carousel">
+				<div class="item text-center image-grid">
+					<ul>
+						<li><img src="images/1.jpg" alt=""></li>
+						<li><img src="images/2.jpg" alt=""></li>
+						<li><img src="images/3.jpg" alt=""></li>
+					</ul>
+				</div>
+				<div class="item text-center image-grid">
+					<ul>
+						<li> <img src="images/3.jpg" alt=""></li>
+						<li><img src="images/4.jpg" alt=""></li>
+						<li><img src="images/5.jpg" alt=""></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!---->
+
+	<!---->
+	<div class="rooms text-center">
+		<div class="container">
+			<h3>Tipos de habitación</h3>
+			<div class="room-grids">
+				<div class="col-md-4 room-sec">
+					<a href="triples.html"><img src="images/pic1.jpg" alt="" /></a>
+					<h4><a href="triples.html">Habitaciones Triples</a></h4>
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>-->
+					<div class="items">
+						<li><a><span class="img4"> </span></a></li>
+						<li><a><span class="img5"> </span></a></li>
+
+					</div>
+				</div>
+				<div class="col-md-4 room-sec">
+					<a href="dobles.html"><img src="images/pic2.jpg" alt="" /></a>
+					<h4><a href="dobles.html">Habitaciones Dobles</a></h4>
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>-->
+					<div class="items">
+						<li><a><span class="img4"> </span></a></li>
+						<li><a><span class="img5"> </span></a></li>
+
+					</div>
+				</div>
+
+				<div class="col-md-4 room-sec">
+					<a href="matrimoniales.html"><img src="images/pic3.jpg" alt="" /></a>
+					<h4><a href="matrimoniales.html">Habitaciones Matrimoniales</a></h4>
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>-->
+					<div class="items">
+						<li><a><span class="img4"> </span></a></li>
+						<li><a><span class="img5"> </span></a></li>
+
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+				<div class="col-md-4 room-sec">
+					<a href="ejecutivas.html"><img src="images/pic5.jpg" alt="" /></a>
+					<h4><a href="ejecutivas.html">Habitación Ejecutiva</a></h4>
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>-->
+					<div class="items">
+						<li><a><span class="img1"> </span></a></li>
+						<li><a><span class="img4"> </span></a></li>
+						<li><a><span class="img5"> </span></a></li>
+						<!--<li><a><span class="img6"> </span></a></li>-->
+					</div>
+				</div>
+				<div class="col-md-4 room-sec">
+					<a href="clasicas.html"><img src="images/pic4.jpg" alt="" /></a>
+					<h4><a href="clasicas.html">Habitaciones Simples</a></h4>
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lectus vitae dui sollicitudin commodo.</p>-->
+					<div class="items">
+						<!--<li><a><span class="img6"> </span></a></li>-->
+						<li><a><span class="img5"> </span></a></li>
+					</div>
+				</div>
+
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!---->
+	<div class="fotter">
+		<div class="container">
+			<h3>60 Habitaciones Según sus Gustos</h3>
+			<h4>"La hospitalidad, Calidad & Buena Ubicación. Nosotros solo estamos aquí para servirle" - Grupo Dionys</h4>
+			<i class="man"></i>
+		</div>
+	</div>
+	<!---->
+	<div class="fotter-info">
+		<div class="container">
+			<div class="col-md-5 details">
+				<div class="hotel-info">
+					<h4>Sobre este Hostal</h4>
+					<p>Hostal Dionys es un Hotel de 3 estrellas ubicado en la victoria cerca del Centro Comercial Gamarra.</p>
+					<p>Abrió sus puertas en el año 2000 resultando ser una elección bien hecha.</p>
+				</div>
+				<div class="news">
+					<h4>¿Tienes Preguntas?</h4>
+					<h5>Estamos aquí para Servirle</h5>
+					<h5>Móvil RPM: <br>990 070 076</h5>
+					<h5>Telf: <br>01 323-0043
+				 <h5>Gmail: <br>hotel@grupodionys.com.pe</h5>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-7 details">
+				<div class="join">
+
+					<div class="contact-us_info">
+						<h3 class="titulo_contactenos">Ubicación</h3>
+						<div class="map">
+							<div class="contact-bottom">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344.8547063065543!2d-77.01428055563022!3d-12.072006636450626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xde2ae1961e198a24!2sHotel+Dionys!5e0!3m2!1ses!2spe!4v1475074812923" width="700" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div><br><a href="https://www.google.com/maps?ll=-12.07202,-77.014118&z=18&t=m&hl=es-ES&gl=PE&mapclient=embed&cid=16008855860308183588" target="_blank"><img border="0" src="">Ir a Google Maps</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="member">
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+	</div>
+	<!---->
+<div class="copyright">
+		<div class="container">
+			<p>© 2017 Todos los derechos reservados | Diseñado por DesarrolloTi /<a href="http://www.grupodionys.com.pe/"> Grupo Dionys</a> </p>
+		</div>
+	</div>
+</body>
+
+</html>
